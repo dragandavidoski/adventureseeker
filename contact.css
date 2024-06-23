@@ -1,0 +1,266 @@
+@font-face{
+    font-family: 'Brush Khalifa';
+    src: url(brush.otf) format('.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* @font-face {
+    font-family: 'Red Hat Display Light';
+    src: url(RedHatDisplay-VariableFont_wght.ttf) format('.ttf');
+} */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+
+.logopic {
+    width: 50px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.header {
+    color: #1C243C;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    position: sticky;
+    background-color: beige;
+    top: 0;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 10;
+    box-sizing: border-box;
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+
+
+.menu {
+    padding-left: 35%;
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+
+}
+
+.Contact {
+    color: #FF4500;
+}
+
+.home{
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.camping, .fishing, .hiking, .gear,  .Contact,.cart {
+    padding-left: 50px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.home:hover, .camping:hover,.hiking:hover, .fishing:hover, .gear:hover ,.cart:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #FF4500;
+}
+.cartpic{
+    width: 20px;
+}
+
+
+
+.first {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    background-image: url(images/contact.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: -30%;
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+
+.quote {
+ 
+    color: beige;
+    font-family: 'Brush Khalifa', sans-serif;
+    font-size: 180px;
+    text-align: center;
+    padding-top: 33%;
+}
+.contacty{
+    margin-top: 50px;
+    display: flex;
+    height: 500px;
+}
+.inputss{
+    margin-left: 20%;
+    justify-content: center;
+
+}
+.info{
+    margin-top: 7%;
+    color: #1C243C;
+    margin-left: 10%;
+}
+.namee,.surnamee,.emaill,.subjectt{
+    margin: 10px;
+    width: 300px;
+    height: 40px;
+    background-color: #1C243C;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+}
+
+.namee:hover,.surnamee:hover,.emaill:hover,.subjectt:hover,.messagee:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+.messagee{
+    background-color: #1C243C;
+    color: white;
+    width: 300px;
+    height: 100px;
+    margin-left: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+}
+.send{
+    margin-left: 12px;
+    margin-top: 20px;
+    justify-content: center;
+    color: beige;
+    background-color: #FF4500;
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+}
+.send:hover{
+    
+    background-color: beige;
+    color: #FF4500;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.back{
+    height: 150px;
+}
+.backtotop{
+    font-size: 110%;
+    margin-top: 25px;
+    margin-left: 41%;
+    width: 200px;
+    height: 80px;
+    background-color: #228B22;
+    color: beige;
+    border-radius: 45px;
+    border-style: none;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+
+}
+.backtotop:hover{
+background-color: beige;
+color: #228B22;
+transform: scale(1.1);
+}
+.footer{
+    background-color: #333333;
+    height: 250px;
+}
+.icons{
+    padding-top: 40px;
+    padding-left: 37%;
+    display: flex;
+    align-items: center;
+}
+.icons>img{
+    padding-left: 15px;
+    width: 40px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+
+}
+.footertext{
+    margin-top: 35px;
+    margin-left: 34%;
+    color: beige;
+    width: 350px;
+    text-align: center;
+}
+.inputs{
+    padding-left: 10px;
+    margin-top: 25px;
+    margin-left: 30%;
+}
+.input.name{
+    padding-left: 15px;
+}
+.name,.email{
+    height: 25px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+
+}
+.sub{
+    height: 30px;
+    border-style: none;
+    background-color: #FF4500;
+    color: beige;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
+.name:hover{
+    border-style: none;
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.4);
+}
+.email:hover{
+    border-style: none;
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.4);
+}
+.sub:hover{
+    cursor: pointer;
+    border-style: none;
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.4);
+}
+.icons>img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}

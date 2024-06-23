@@ -1,0 +1,570 @@
+@font-face{
+    font-family: 'Brush Khalifa';
+    src: url(brush.otf) format('.otf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* @font-face {
+    font-family: 'Red Hat Display Light';
+    src: url(RedHatDisplay-VariableFont_wght.ttf) format('.ttf');
+} */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+
+.logopic {
+    width: 50px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.header {
+    color: #1C243C;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    position: sticky;
+    background-color: beige;
+    top: 0;
+    width: 100%;
+    padding: 0 20px;
+    z-index: 10;
+    box-sizing: border-box;
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+
+
+.menu {
+    padding-left: 35%;
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+
+}
+
+.camping {
+    color: #FF4500;
+}
+
+.home{
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.camping, .fishing, .hiking, .gear,  .Contact,.cart {
+    padding-left: 50px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.home:hover, .camping:hover, .fishing:hover, .gear:hover,  .Contact:hover ,.cart:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #FF4500;
+}
+.cartpic{
+    width: 20px;
+}
+
+
+
+.first {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 900px;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: -30%;
+    border-bottom-right-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+
+.quote {
+ 
+    color: beige;
+    font-family: 'Brush Khalifa', sans-serif;
+    font-size: 180px;
+    text-align: center;
+    padding-top: 33%;
+}
+.explore{
+    margin-left: 8%;
+    justify-content: center;
+    display: flex;
+}
+.explore>button{
+    margin-top: 6%;
+    margin-right: 10%;
+    border-radius: 50%;
+    background-color: #FF4500;
+    font-family: 'Brush Khalifa' sans-serif;
+    color: beige;
+    height: 150px;
+    width: 150px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.campingmap{
+    background-image: url(images/campingmap.jpg);
+    background-size: contain;
+}
+.campingtips{
+    background-image: url(images/campingtips.jpg);
+    background-size: contain;
+}
+.campingtours{
+    background-image: url(images/campingtour.jpg);
+    background-size: contain;
+}
+.campinggear{
+    background-image: url(images/campinggear.jpg);
+    background-size: contain;
+}
+.campingmap, .campingtips, .campingtours, .campinggear {
+    position: relative;
+    background-size: contain;
+}
+
+.campingmap, .campingtips, .campingtours, .campinggear {
+    position: relative;
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border: 3px solid beige;
+    font-family: fantasy;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+    transition: transform 0.3s ease, color 0.3s ease;
+
+}
+
+.campingmap:hover, .campingtips:hover, .campingtours:hover, .campinggear:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+
+}
+.campingmap::before, .campingtips::before, .campingtours::before, .campinggear::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.map{
+    display: flex;
+    
+}
+.mapimg{
+    margin-top: 7%;
+    border-radius: 20px;
+    margin-left: 60px;
+}
+.maptext{
+    margin-left: 80px;
+    width: 400px;
+    height: 280px;
+    margin-top: 3%;
+    padding: 40px;
+    border: solid 5px rgb(242, 242, 217);
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    color: #228B22;
+
+}
+h1{
+    color: #228B22;
+    padding-left: 25%;
+    padding-top: 30px;
+}
+.city{
+    background-color: #333333;
+    padding-left: 40px;
+    font-size: 110%;
+    width: 200px;
+    height: 40px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    border-radius: 10px;
+    
+}
+.country{
+    background-color: #333333;
+    padding-left: 40px;
+    font-size: 110%;
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    border-radius: 10px;
+
+
+}
+.find{
+    border-style: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #FF4500;
+    color: beige;
+    transition: transform 0.3s ease, color 0.3s ease;
+
+}
+.city:hover, .country:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.find:hover{
+    transform: scale(1.1);
+    background-color: beige;
+    color: #FF4500;
+    cursor: pointer;
+
+}
+.dos,.donts{
+    margin-top: 60px;
+    margin-left: 20%;
+    display: flex;
+}
+
+.doscircle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    font-size: 110%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    z-index: 4;
+    background-color: beige;
+
+}
+.dontscircle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    font-size: 110%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    background-color: #228B22;
+}
+.dostext{
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    z-index: 3;
+    padding-right: 40px;
+    margin-left: -11%;
+    padding-left: 150px;
+    height: 200px;
+    width: 500px;
+    color: #228B22;
+    align-content: center;
+    background-color: beige;
+    list-style-image: url(images/accept.png);
+    line-height: 30px;
+}
+.dontstext{ 
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    z-index: 1;
+    padding-right: 40px;
+    margin-left: -11%;
+    padding-left: 150px;
+    height: 200px;
+    width: 500px;
+    color: beige;
+    align-content: center;
+    background-color: #228B22;
+    list-style-image: url(images/delete-button.png);
+    line-height: 30px;
+}
+.doscircletext{
+    color: #228B22;
+    font-size: 140%;
+    padding-left: 70px;
+    padding-top: 90px;
+}
+.dontscircletext{
+    color: beige;
+    font-size: 140%;
+    padding-left: 40px;
+    padding-top: 90px;
+}
+.container {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.container:hover .overlay {
+    height: 100%;
+}
+
+.overlaytext {
+    display: flex;
+    width: 200px;
+    text-align: center;
+    color: beige;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.overlaytext >img{
+    width: 20px;
+}
+.sphighlights{
+    display: flex;
+}
+.overlaybutton{
+    margin-top: 18%;
+    margin-left: 20%;
+    top: 75%;
+    align-content: center;
+    text-align: center;
+    height: 40px;
+    width: 150px;
+    background-color: #FF4500;
+    color: beige;
+    border-radius: 45px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+
+}
+.overlaybutton:hover{
+    background-color: beige;
+    color: #FF4500;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.overlaytitle{
+    color: #ffffff;
+    text-decoration: solid;
+    margin-top: 45%;
+    text-align: center;
+}
+.reviewcount{
+    color: rgb(228, 228, 211);
+    text-align: center;
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+.toursholder{
+    justify-content: center;
+    display: flex;
+}
+
+.norway,.swiss,.spain, .north,.queensland,.canada{
+    color: beige;
+    text-decoration: solid;
+    width: 250px;
+    height: 200px;
+    margin: 20px;
+    background-color: #228B22;
+    border-radius: 5px;
+
+}
+.yosemite,.arizona{
+    color: beige;
+    text-decoration: solid;
+    width: 250px;
+    height: 310px;
+    margin: 20px;
+    border-radius: 5px;
+
+    background-color: #228B22;
+}
+
+.swiss{
+    background-image: url(images/norway.jpg);
+    background-size: cover;
+}
+.norway{
+    background-image: url(images/NordicWoods_LR_Evy-232-1024x683.jpg);
+    background-size: cover;
+}
+.spain{
+    background-image: url(images/spain.avif);
+    background-size: cover;
+}
+.yosemite{
+    background-image: url(images/yosemite.jpg);
+    background-size: cover;
+}
+.arizona{
+    background-image: url(images/canyon.jpg);
+    background-size: cover;
+}
+.north{
+    background-image: url(images/north.jpg);
+    background-size: cover;
+}
+.queensland{
+    background-image: url(images/reef.jpg);
+    background-size: cover;
+}
+.canada{
+    background-image: url(images/canada.jpg);
+}
+.tttext{
+    transition: transform 0.3s ease, color 0.3s ease;
+    background-color: rgba(225, 225, 225, 0.4);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.tttext:hover{
+    text-decoration: solid;
+    background-color: white;
+    color: #1C243C;
+}
+
+
+.rgtext{
+    margin-top: 40px;
+text-align: center;
+font-size: 75px;
+color: #FF4500;
+font-family: 'Brush Khalifa';
+}
+.tattitle{
+    text-align: center;
+font-size: 75px;
+color: #FF4500;
+font-family: 'Brush Khalifa';
+    margin-top: 50px;
+
+}
+
+.back{
+    height: 150px;
+}
+.backtotop{
+    font-size: 110%;
+    margin-top: 25px;
+    margin-left: 41%;
+    width: 200px;
+    height: 80px;
+    background-color: #228B22;
+    color: beige;
+    border-radius: 45px;
+    border-style: none;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+
+}
+.backtotop:hover{
+background-color: beige;
+color: #228B22;
+transform: scale(1.1);
+}
+.footer{
+    background-color: #333333;
+    height: 250px;
+}
+.icons{
+    padding-top: 40px;
+    padding-left: 37%;
+    display: flex;
+    align-items: center;
+}
+.icons>img{
+    padding-left: 15px;
+    width: 40px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+
+}
+.footertext{
+    margin-top: 35px;
+    margin-left: 34%;
+    color: beige;
+    width: 350px;
+    text-align: center;
+}
+.inputs{
+    padding-left: 10px;
+    margin-top: 25px;
+    margin-left: 30%;
+}
+.input.name{
+    padding-left: 15px;
+}
+.name,.email{
+    height: 25px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+
+}
+.sub{
+    height: 30px;
+    border-style: none;
+    background-color: #FF4500;
+    color: beige;
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
+.name:hover{
+    border-style: none;
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.4);
+}
+.email:hover{
+    border-style: none;
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.4);
+}
+.sub:hover{
+    cursor: pointer;
+    border-style: none;
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0 6px 20px 0 rgba(0,0,0,0.4);
+}
+.icons>img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
